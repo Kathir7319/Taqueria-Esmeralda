@@ -70,7 +70,7 @@ export const ContactPage: React.FC = () => {
                 {restaurantInfo.address}
               </p>
             </div>
-            <div className="pt-6">
+            <div className="mt-auto pt-6">
               <a
                 href={restaurantInfo.googleMapsUrl}
                 target="_blank"
@@ -97,10 +97,10 @@ export const ContactPage: React.FC = () => {
                 {restaurantInfo.phoneDisplay}
               </p>
             </div>
-            <div className="pt-6">
+            <div className="mt-auto pt-6">
               <a
                 href={`tel:${restaurantInfo.phone}`}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-esmeralda-700 hover:bg-esmeralda-800 text-white font-bold text-xs shadow-sm transition-all"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-esmeralda-700 hover:bg-esmeralda-800 text-white font-bold text-xs shadow-sm transition-all whitespace-nowrap"
               >
                 <Phone className="w-3.5 h-3.5 fill-white" />
                 <span>Call Now: 919-377-2455</span>
@@ -130,7 +130,7 @@ export const ContactPage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="pt-4 text-xs font-semibold text-emerald-700 flex items-center gap-1.5">
+            <div className="mt-auto pt-6 text-xs font-semibold text-emerald-700 flex items-center gap-1.5">
               <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
               <span>Open Today for Lunch & Dinner</span>
             </div>

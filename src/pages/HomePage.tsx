@@ -153,7 +153,7 @@ export const HomePage: React.FC = () => {
                 </div>
 
                 {/* Floating Patron Review Badge */}
-                <div className="absolute -bottom-6 -left-4 sm:-left-6 bg-white rounded-2xl p-3.5 shadow-2xl border border-stone-100 max-w-[260px] hidden sm:block text-stone-900">
+                <div className="absolute -bottom-5 left-3 sm:-left-4 md:-left-6 bg-white rounded-2xl p-3.5 shadow-2xl border border-stone-100 max-w-[260px] hidden sm:block text-stone-900">
                   <div className="flex items-center gap-1.5 mb-1">
                     <div className="flex text-amber-500">
                       {[...Array(5)].map((_, i) => (
@@ -396,11 +396,11 @@ export const HomePage: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="mt-4 pt-3 border-t border-stone-100 flex items-center justify-between">
+                  <div className="mt-auto pt-3 border-t border-stone-100 flex items-center justify-between">
                     <span className="text-[11px] text-stone-500 font-medium">Double corn tortilla</span>
                     <button
                       onClick={() => setSelectedItemForModal(taco)}
-                      className="px-3 py-1.5 rounded-xl bg-esmeralda-600 hover:bg-esmeralda-700 text-white font-bold text-xs shadow-sm transition-all"
+                      className="px-3 py-1.5 rounded-xl bg-esmeralda-600 hover:bg-esmeralda-700 text-white font-bold text-xs shadow-sm transition-all whitespace-nowrap"
                     >
                       + Order
                     </button>
@@ -460,11 +460,11 @@ export const HomePage: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="mt-5 pt-3 border-t border-stone-100 flex items-center justify-between">
+                  <div className="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
                     <span className="text-xs font-semibold text-stone-700">Choice of meat & salsa</span>
                     <button
                       onClick={() => setSelectedItemForModal(item)}
-                      className="px-4 py-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs transition-colors"
+                      className="px-4 py-2 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs transition-colors whitespace-nowrap"
                     >
                       Customize & Add
                     </button>

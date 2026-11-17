@@ -28,9 +28,12 @@ export const OrderDrawer: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-hidden bg-black/60 backdrop-blur-sm transition-opacity">
+    <div 
+      className="fixed inset-0 z-50 overflow-hidden bg-black/60 backdrop-blur-sm transition-opacity"
+      onClick={() => setIsCartOpen(false)}
+    >
       <div 
-        className="fixed inset-y-0 right-0 max-w-full flex pl-10"
+        className="fixed inset-y-0 right-0 max-w-full flex pl-0 sm:pl-10"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="w-screen max-w-md bg-white shadow-2xl flex flex-col">

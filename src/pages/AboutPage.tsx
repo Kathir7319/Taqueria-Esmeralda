@@ -96,7 +96,7 @@ export const AboutPage: React.FC = () => {
             </div>
 
             {/* Floating Rating Pill */}
-            <div className="absolute -top-5 -right-3 sm:-right-5 bg-white p-4 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3">
+            <div className="absolute top-3 right-3 sm:-top-5 sm:-right-5 bg-white p-3.5 sm:p-4 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center font-black">
                 <Star className="w-6 h-6 fill-amber-500 text-amber-500" />
               </div>

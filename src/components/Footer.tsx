@@ -15,8 +15,8 @@ export const Footer: React.FC = () => {
           
           {/* Brand Col */}
           <div className="space-y-4">
-            <div className="bg-esmeralda-900/50 p-4 rounded-2xl border border-esmeralda-800/60 inline-block">
-              <Logo size="md" />
+            <div className="bg-esmeralda-900/60 p-3.5 rounded-2xl border border-esmeralda-800/80 inline-block shadow-inner">
+              <Logo size="md" theme="dark" />
             </div>
             <p className="text-sm text-stone-300 leading-relaxed">
               Morrisville's destination for authentic Mexican street food. Traditional family recipes, double corn tortillas, fresh marinades, and genuine hospitality.

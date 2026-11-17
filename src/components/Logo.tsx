@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 interface LogoProps {
   variant?: 'horizontal' | 'badge' | 'icon';
   size?: 'sm' | 'md' | 'lg' | 'xl';
+  theme?: 'light' | 'dark';
   className?: string;
   isLink?: boolean;
 }
@@ -11,6 +12,7 @@ interface LogoProps {
 export const Logo: React.FC<LogoProps> = ({
   variant = 'horizontal',
   size = 'md',
+  theme = 'light',
   className = '',
   isLink = true
 }) => {
@@ -22,6 +24,8 @@ export const Logo: React.FC<LogoProps> = ({
   };
 
   const currentSize = sizeMap[size];
+
+  const isDark = theme === 'dark';
 
   const EmblemSVG = (
     <div className={`relative flex-shrink-0 ${currentSize.icon} drop-shadow-md`}>
@@ -101,14 +105,14 @@ export const Logo: React.FC<LogoProps> = ({
           Taqueria
         </span>
         <span className="h-1 w-1 rounded-full bg-terracotta-500"></span>
-        <span className="font-sans text-[9px] font-semibold text-stone-400 uppercase tracking-widest hidden sm:inline whitespace-nowrap">
+        <span className={`font-sans text-[9px] font-semibold uppercase tracking-widest hidden sm:inline whitespace-nowrap ${isDark ? 'text-stone-300' : 'text-stone-400'}`}>
           Morrisville
         </span>
       </div>
-      <span className={`font-serif font-black tracking-tight text-esmeralda-900 group-hover:text-esmeralda-700 transition-colors whitespace-nowrap ${currentSize.textTitle}`}>
+      <span className={`font-serif font-black tracking-tight transition-colors whitespace-nowrap ${currentSize.textTitle} ${isDark ? 'text-white group-hover:text-amber-300' : 'text-esmeralda-950 group-hover:text-esmeralda-700'}`}>
         Esmeralda
       </span>
-      <span className={`font-sans font-medium text-stone-500 tracking-wider whitespace-nowrap ${currentSize.textSub}`}>
+      <span className={`font-sans font-medium tracking-wider whitespace-nowrap ${currentSize.textSub} ${isDark ? 'text-emerald-200' : 'text-stone-500'}`}>
         Authentic Mexican Street Food
       </span>
     </div>

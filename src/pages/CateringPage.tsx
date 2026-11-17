@@ -110,7 +110,7 @@ export const CateringPage: React.FC = () => {
                 type="button"
                 onClick={() => {
                   setPackageChoice('taco-bar');
-                  window.scrollTo({ top: 800, behavior: 'smooth' });
+                  document.getElementById('catering-calculator')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="w-full py-2.5 rounded-xl bg-esmeralda-600 hover:bg-esmeralda-700 text-white font-bold text-xs shadow-md transition-colors"
               >
@@ -161,7 +161,7 @@ export const CateringPage: React.FC = () => {
                 type="button"
                 onClick={() => {
                   setPackageChoice('burrito-box');
-                  window.scrollTo({ top: 800, behavior: 'smooth' });
+                  document.getElementById('catering-calculator')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="w-full py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs transition-colors"
               >
@@ -212,7 +212,7 @@ export const CateringPage: React.FC = () => {
                 type="button"
                 onClick={() => {
                   setPackageChoice('royal-fiesta');
-                  window.scrollTo({ top: 800, behavior: 'smooth' });
+                  document.getElementById('catering-calculator')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="w-full py-2.5 rounded-xl bg-stone-900 hover:bg-stone-800 text-white font-bold text-xs transition-colors"
               >
@@ -224,7 +224,7 @@ export const CateringPage: React.FC = () => {
         </div>
 
         {/* Interactive Estimator & Inquiry Form */}
-        <div className="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-xl">
+        <div id="catering-calculator" className="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-xl scroll-mt-24">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
             
             {/* Left: Instant Pricing Estimator */}

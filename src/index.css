@@ -13,6 +13,13 @@
     color: #1c1917;
     overflow-x: hidden;
   }
+
+  #root {
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Custom scrollbars */

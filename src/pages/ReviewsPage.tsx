@@ -243,17 +243,15 @@ export const ReviewsPage: React.FC = () => {
               </div>
 
               {/* Mentioned dish footer */}
-              {rev.dishMentioned && (
-                <div className="pt-3 border-t border-stone-100 flex items-center justify-between text-[11px]">
-                  <span className="font-bold text-esmeralda-800 bg-esmeralda-50 px-2.5 py-1 rounded-full">
-                    {rev.dishMentioned}
-                  </span>
-                  <span className="text-stone-400 flex items-center gap-1">
-                    <ThumbsUp className="w-3 h-3 text-emerald-600" />
-                    Verified Customer
-                  </span>
-                </div>
-              )}
+              <div className="mt-auto pt-3 border-t border-stone-100 flex items-center justify-between text-[11px]">
+                <span className="font-bold text-esmeralda-800 bg-esmeralda-50 px-2.5 py-1 rounded-full">
+                  {rev.dishMentioned || 'Authentic Mexican Street Food'}
+                </span>
+                <span className="text-stone-400 flex items-center gap-1">
+                  <ThumbsUp className="w-3 h-3 text-emerald-600" />
+                  Verified Dine
+                </span>
+              </div>
             </div>
           ))}
         </div>

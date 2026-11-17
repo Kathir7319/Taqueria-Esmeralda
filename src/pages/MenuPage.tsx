@@ -257,12 +257,12 @@ export const MenuPage: React.FC = () => {
                   </div>
 
                   {/* Action */}
-                  <div className="pt-3 border-t border-stone-100 flex items-center justify-between">
-                    <span className="text-xs font-bold text-stone-900">${item.price.toFixed(2)}</span>
+                  <div className="mt-auto pt-4 border-t border-stone-100 flex items-center justify-between">
+                    <span className="text-sm font-bold text-stone-900">${item.price.toFixed(2)}</span>
                     <button
                       type="button"
                       onClick={() => setSelectedItemForModal(item)}
-                      className="px-4 py-2 rounded-xl bg-esmeralda-600 hover:bg-esmeralda-700 text-white text-xs font-bold shadow-md shadow-esmeralda-600/20 transition-all active:scale-95"
+                      className="px-4 py-2 rounded-xl bg-esmeralda-600 hover:bg-esmeralda-700 text-white text-xs font-bold shadow-md shadow-esmeralda-600/20 transition-all active:scale-95 whitespace-nowrap"
                     >
                       {item.options ? 'Customize & Order' : '+ Add to Order'}
                     </button>
