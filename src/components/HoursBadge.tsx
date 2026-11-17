@@ -6,23 +6,24 @@ export const HoursBadge: React.FC = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
   return (
-    <div className="relative inline-block text-left">
+    <div className="relative inline-block text-left flex-shrink-0">
       <button
+        type="button"
         onClick={() => setIsOpenMenu(!isOpenMenu)}
-        className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-semibold hover:bg-emerald-100 transition-colors shadow-sm"
+        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/90 text-emerald-800 text-xs font-semibold hover:bg-emerald-100 transition-colors shadow-xs whitespace-nowrap"
         aria-expanded={isOpenMenu}
       >
-        <span className="relative flex h-2 w-2">
+        <span className="relative flex h-2 w-2 flex-shrink-0">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
         </span>
-        <span>Open Today • 11:00 AM - 9:00 PM</span>
-        <ChevronDown className="w-3.5 h-3.5 text-emerald-600" />
+        <span className="whitespace-nowrap font-medium text-emerald-900">Open Now • Till 9 PM</span>
+        <ChevronDown className="w-3 h-3 text-emerald-600 flex-shrink-0" />
       </button>
 
       {isOpenMenu && (
         <div 
-          className="absolute left-0 sm:right-0 sm:left-auto mt-2 w-72 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-black/5 z-50 animate-in fade-in zoom-in-95"
+          className="absolute right-0 mt-2 w-72 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-black/5 z-50 animate-in fade-in zoom-in-95"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex items-center justify-between pb-3 border-b border-stone-100 mb-3">
@@ -31,7 +32,7 @@ export const HoursBadge: React.FC = () => {
               <h4 className="font-bold text-sm text-stone-900">Operating Hours</h4>
             </div>
             <span className="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full">
-              Open Now
+              Open Today
             </span>
           </div>
 

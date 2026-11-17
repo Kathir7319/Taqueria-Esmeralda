@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
+import { RunningReviews } from './components/RunningReviews';
 import { OrderDrawer } from './components/OrderDrawer';
 import { HomePage } from './pages/HomePage';
 import { MenuPage } from './pages/MenuPage';
@@ -28,6 +29,8 @@ function App() {
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>
+          {/* Running Google Reviews Marquee directly above footer */}
+          <RunningReviews />
           <Footer />
           <OrderDrawer />
         </div>

@@ -95,20 +95,20 @@ export const Logo: React.FC<LogoProps> = ({
   );
 
   const TextLockup = (
-    <div className="flex flex-col">
+    <div className="flex flex-col whitespace-nowrap flex-shrink-0">
       <div className="flex items-center gap-1.5 leading-none">
-        <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.25em] text-maize-500 uppercase">
+        <span className="font-sans text-[10px] sm:text-xs font-bold tracking-[0.25em] text-maize-500 uppercase whitespace-nowrap">
           Taqueria
         </span>
         <span className="h-1 w-1 rounded-full bg-terracotta-500"></span>
-        <span className="font-sans text-[9px] font-semibold text-stone-400 uppercase tracking-widest hidden sm:inline">
+        <span className="font-sans text-[9px] font-semibold text-stone-400 uppercase tracking-widest hidden sm:inline whitespace-nowrap">
           Morrisville
         </span>
       </div>
-      <span className={`font-serif font-black tracking-tight text-esmeralda-900 group-hover:text-esmeralda-700 transition-colors ${currentSize.textTitle}`}>
+      <span className={`font-serif font-black tracking-tight text-esmeralda-900 group-hover:text-esmeralda-700 transition-colors whitespace-nowrap ${currentSize.textTitle}`}>
         Esmeralda
       </span>
-      <span className={`font-sans font-medium text-stone-500 tracking-wider ${currentSize.textSub}`}>
+      <span className={`font-sans font-medium text-stone-500 tracking-wider whitespace-nowrap ${currentSize.textSub}`}>
         Authentic Mexican Street Food
       </span>
     </div>

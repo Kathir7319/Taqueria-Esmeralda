@@ -177,8 +177,6 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* RUNNING GOOGLE REVIEWS TICKER */}
-      <RunningReviews />
 
       {/* QUICK HIGHLIGHTS SECTION (From Document Blueprint) */}
       <section className="py-16 bg-white border-b border-stone-200/60">
